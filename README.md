@@ -55,4 +55,4 @@ This project doesn't run independently but served as a getting started with the 
 	```
 
 #### View Results
-To see the results from this project take a look at the screenshots
+To see the results from this project take a look at the [screenshots](https://github.com/adamrhans/Mod14_Debezium/blob/main/Debezium.zip)
