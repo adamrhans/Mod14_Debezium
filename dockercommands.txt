@@ -1,0 +1,15 @@
+Create MySQL Docker Image
+    docker build -t mysqlmasterimg .
+
+Create MySQL Docker Container from the Docker image mysqlmasterimg
+    docker run --rm --name mysqlserver -p 3306:3306 --network CDCFinalAssignment -d mysqlmasterimg
+
+Navigate to the Debezium folder. Create a Docker image using the Debezium Dockerfile.
+    docker build -t debeziumimg . 
+
+Create a Debezium Docker container for this assignment and associate it to the 
+CDCFinalAssignment network. 
+    docker run -it --rm --name debeziumserver --network CDCFinalAssignment debeziumimg bash
+
+Now, to test the CDC, open the mysqlserver CLI and connect to the database using the following command:
+    mysql -h localhost -u root -pMyNewPass employeedb
