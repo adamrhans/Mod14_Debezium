@@ -28,7 +28,7 @@ This project doesn't run independently but served as a getting started with the 
 	```
 	docker run --rm --name mysqlserver -p 3306:3306 --network myCDCNetwork -d mysqlmasterimg
 	```
-- I then unpacked the contents of the Debezium Folder and created the Docker image
+- I then unpacked the contents of the [Debezium Folder](https://github.com/adamrhans/Mod14_Debezium/blob/main/Debezium.zip) and created the Docker image
 	```
 	docker build -t debeziumimg .
 	```
