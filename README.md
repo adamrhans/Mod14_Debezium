@@ -26,7 +26,7 @@ This project doesn't run independently but served as a getting started with the 
 	```
 - Next, I created the Docker container and tied it to the network
 	```
-	docker run --rm --name mysqlserver -p 3306:3306 --network myCDCNetwork -d mysqlmasterimg
+	docker run --name mysqlserver -p 3306:3306 --network myCDCNetwork -d mysqlmasterimg
 	```
 - I then unpacked the contents of the [Debezium Folder](https://github.com/adamrhans/Mod14_Debezium/blob/main/Debezium.zip) and created the Docker image
 	```
@@ -34,7 +34,7 @@ This project doesn't run independently but served as a getting started with the 
 	```
 - Then, I set up the debezium container
 	```
-	docker run -it --rm --name debeziumserver --network myCDCNetwork debeziumimg bash
+	docker run -it --name debeziumserver --network myCDCNetwork debeziumimg bash
 	```
 - I had to run two commands within the debezium container to install nano
 	```
