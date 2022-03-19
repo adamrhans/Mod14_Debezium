@@ -53,3 +53,6 @@ This project doesn't run independently but served as a getting started with the 
 	```	
 	INSERT INTO employeedb.employee VALUES (2, "Mary", "Doe", "4351234354", "mary@doe.com");
 	```
+
+#### View Results
+To see the results from this project take a look at the screenshots
